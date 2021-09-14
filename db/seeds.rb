@@ -7,18 +7,18 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Coin.create!(
     description: "Bitcoin",
-    acronyn: "BTC",
+    acronym: "BTC",
     url_image:  "https://toppng.com/uploads/preview/bitcoin-png-bitcoin-logo-transparent-background-11562933997uxok6gcqjp.png" 
 )
 
 Coin.create!(
     description: "Ethereum",
-    acronyn: "ETH",
+    acronym: "ETH",
     url_image: "https://w7.pngwing.com/pngs/368/176/png-transparent-ethereum-cryptocurrency-blockchain-bitcoin-logo-bitcoin-angle-triangle-logo-thumbnail.png"
 )
 
 Coin.create!(
   description: "Dash",
-  acronyn: "DSH",
+  acronym: "DSH",
   url_image: "https://w7.pngwing.com/pngs/37/123/png-transparent-dash-bitcoin-cryptocurrency-digital-currency-logo-bitcoin-blue-angle-text.png" 
 )
