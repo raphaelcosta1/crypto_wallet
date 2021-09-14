@@ -11,7 +11,6 @@ namespace :dev do
       puts "Você não está em ambiente de desenvolvimento!"
     end
   end
-  
   desc "Cadastra as moedas"
   task add_coins: :environment do
     show_spinner("Cadastrando moedas...") do
@@ -42,13 +41,11 @@ namespace :dev do
                   url_image: "https://www.cryptocompare.com/media/351360/zec.png",
                 }
               ]
-      
       coins.each do |coin|
         Coin.find_or_create_by!(coin)
       end
     end
   end
-
   desc "Cadastra os tipos de mineração"
   task add_mining_types: :environment do
     show_spinner("Cadastrando tipos de mineração...") do
@@ -57,13 +54,11 @@ namespace :dev do
         {description: "Proof of Stake", acronym: "PoS"},
         {description: "Proof of Capacity", acronym: "PoC"}
       ]
-      
       mining_types.each do |mining_type|
         MiningType.find_or_create_by!(mining_type)
       end
     end
   end
-
 
   private
 
