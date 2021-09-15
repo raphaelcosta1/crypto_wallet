@@ -1,16 +1,17 @@
 <h1>Seja Bem-vindo!</h1>
-
+<p>O idioma usado nessa aplicação é: <strong> <%= locale(I18n.locale)  %> </p></strong>
 <p><strong>Data:</strong> <%= data_br(Date.today) %> </p>
+
 
 <ul>
     <li>
-        <%= link_to "Moedas", coins_path %>
+        <%= link_to "Cadastro de Moedas", coins_path %>
     </li>
     <li>
-        <%= link_to "Tipos de Mineração", mining_types_path %>
+        <%= link_to "Cadastro de Tipos de Moeda", mining_types_path %>
     </li>
 </ul>
 
 <p>
     Você está em ambiente de <strong><%= ambiente_rails %></strong>
-</p> 
+</p>    
