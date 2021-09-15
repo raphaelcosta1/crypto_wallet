@@ -19,14 +19,13 @@ namespace :dev do
                   description: "Bitcoin",
                   acronym: "BTC",
                   url_image: "https://assets.chinatechnews.com/wp-content/uploads/bitcoin-logo.jpg",
-                  mining_type: MiningType.where(acronym: 'PoW')
+                  mining_type: MiningType.find_by(acronym: 'PoW')
                 },
                 { 
                   description: "Ethereum",
                   acronym: "ETH",
                   url_image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZCRfwkqpPvFb3QmmwGONG2i6PsgnqZ3L7dRzCNlaSTB1-ruu5",
                   mining_type: MiningType.all.sample
-                
                 },
                 { 
                   description: "Dash",
