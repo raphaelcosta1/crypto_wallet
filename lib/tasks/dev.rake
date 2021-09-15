@@ -66,6 +66,6 @@ namespace :dev do
     spinner = TTY::Spinner.new("[:spinner] #{msg_start}")
     spinner.auto_spin
     yield
-    spinner.success("(#{msg_end})")    
+    spinner.success("(#{msg_end})")
   end
 end
